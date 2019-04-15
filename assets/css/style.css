@@ -1,0 +1,115 @@
+@font-face {
+  font-family: caps;
+  src: url(../fonts/caps.ttf);
+}
+
+@font-face {
+  font-family: normal;
+  src: url(../fonts/normal-bold.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+  font-family: normal;
+}
+
+body {
+  max-width: 1084px;
+  margin: 0 auto;
+}
+
+header,
+ul {
+  display: flex;
+}
+header {
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.burger {
+  display: none;
+}
+.navi {
+  width: 214px;
+  justify-content: space-between;
+}
+a {
+  color: #181818;
+  transition: 300ms color ease;
+}
+
+a:hover {
+  color: #BADC58;
+  transition: 300ms color ease;
+}
+a, h1, h2, h3, add {
+  font-family: normal;
+}
+.hero {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 50px;
+  /* color: #FFF; */
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 14px;
+  /* margin-bottom: 53px; */
+}
+
+.first_line{
+  margin-bottom: 10px;
+}
+
+.second_line {
+margin-bottom: 53px;
+}
+
+.more {
+  cursor: pointer;
+  padding: 15px 47px;
+  border: 1px solid #BADC58;
+  border-radius: 10px;
+  transition: 300ms ease;
+  font-size: 14px;
+  color: #181818;
+  background-color: #BADC58;
+  margin-bottom: 91px;
+}
+
+.more:hover {
+  color: #fff;
+  transition: 300ms color ease;
+}
+
+.scroll {
+position: absolute;
+bottom: 108px;
+font-size: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+right: 100px;
+left: 100px;
+}
+
+.scroll::after {
+  content: url('../images/down.png');
+  background-color: #181818;
+  margin-top: 21px;
+}

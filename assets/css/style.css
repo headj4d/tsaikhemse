@@ -241,16 +241,16 @@ footer {
 footer::before {
   content: url('../images/basil.png');
   position: absolute;
-  top: 1800px;
-  left: -585px;
+  top: 1600px;
+  left: -777px;
   z-index: -1;
 }
 
 footer::after {
   content: url('../images/basil.png');
   position: absolute;
-  top: 790px;
-  right: -640px;
+  top: 570px;
+  right: -830px;
 }
 
 .address {

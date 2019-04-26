@@ -29,7 +29,7 @@ header {
   height: 60px;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .burger {
@@ -173,7 +173,7 @@ h1 {
   width: 100%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  z-index:
+  z-index: 1;
 
 }
 .product-title {
@@ -195,6 +195,7 @@ h1 {
 
 .pasta:hover {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  z-index: 2;
 }
 
 h2 {
@@ -225,6 +226,8 @@ h2 {
   color: #181818;
   transition: 300ms ease;
 }
+
+}
 .pasta img {
   margin-bottom: 20px;
 }
@@ -232,29 +235,33 @@ h2 {
 footer {
   background-color: #292C2F;
   height: 557px;
+  width: 100%;
+  left: 0;
   display: flex;
+  position: absolute;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 
 footer::before {
   content: url('../images/basil.png');
   position: absolute;
-  top: 1600px;
-  left: -777px;
+  top: -400px;
+  left: -580px;
   z-index: -1;
 }
 
 footer::after {
-  content: url('../images/basil.png');
+  content: url('../images/one.png');
   position: absolute;
-  top: 570px;
-  right: -830px;
+  top: -1340px;
+  right: 266px;
 }
 
 .address {
-  width: 800px;
+  width: 1086px;
   background-color: #FFF;
   color: #F59A63;
   font-size: 14px;
@@ -266,4 +273,26 @@ footer::after {
   font-family: caps;
   font-weight: normal;
   margin-top: 63px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 1450px;
+}
+
+.fb, .inst, .yt {
+  height: 20px;
+  width: 10px;
+}
+
+.inst {
+  width: 20px;
+}
+
+.yt {
+  width: 16.88px;
 }

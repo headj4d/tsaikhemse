@@ -242,6 +242,12 @@ h2 {
   transition: 300ms ease;
 }
 
+.add.added {
+  background-color: #ECF0F1;
+  border-color: #ECF0F1;
+  color: #BDC3C7;
+}
+
 }
 .pasta img {
   margin-bottom: 20px;
